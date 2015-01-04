@@ -1,6 +1,6 @@
 ﻿using TinyBusinessLayer.Interfaces;
 
-namespace TinyBusinessLayer.Specification.Interfaces
+namespace TinyBusinessLayer.Specifications.Interfaces
 {
     /// <summary>
     /// Represents a specification.
@@ -14,15 +14,15 @@ namespace TinyBusinessLayer.Specification.Interfaces
         /// <summary>
         /// Gets a business object based on the query being passed in.
         /// </summary>
-        /// <param name="query">The query.</param>
+        /// <param name="items">The list of business object items.</param>
         /// <returns></returns>
-        TBusinessObject SatisfyingFrom(IBusinessObjectCollection<TBusinessObject> query);
+        TBusinessObject ItemMatched(IBusinessObjectCollection<TBusinessObject> items);
 
         /// <summary>
         /// Gets the list of items that satisfies the query being passed in.
         /// </summary>
-        /// <param name="query">The query.</param>
+        /// <param name="items">The list of business object items.</param>
         /// <returns></returns>
-        IBusinessObjectCollection<TBusinessObject> SatisfyingObjectsFrom(IBusinessObjectCollection<TBusinessObject> query);
+        IBusinessObjectCollection<TBusinessObject> ItemsMatched(IBusinessObjectCollection<TBusinessObject> items);
     }
 }

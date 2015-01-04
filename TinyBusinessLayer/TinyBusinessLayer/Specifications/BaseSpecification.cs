@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 using TinyBusinessLayer.Interfaces;
-using TinyBusinessLayer.Specification.Interfaces;
+using TinyBusinessLayer.Specifications.Interfaces;
 
 namespace TinyBusinessLayer.Specification
 {
@@ -25,23 +25,23 @@ namespace TinyBusinessLayer.Specification
         }
 
         /// <summary>
-        /// Gets one item or returns null based on the predicate.
+        /// Gets a business object based on the query being passed in.
         /// </summary>
-        /// <param name="query">The query.</param>
+        /// <param name="items">The list of business object items.</param>
         /// <returns></returns>
-        public virtual TBusinessObject SatisfyingFrom(IBusinessObjectCollection<TBusinessObject> query)
+        public virtual TBusinessObject ItemMatched(IBusinessObjectCollection<TBusinessObject> items)
         {
-            return query.Where(Predicate).SingleOrDefault();
+            return items.Where(Predicate).SingleOrDefault();
         }
 
         /// <summary>
-        /// Gets the <seealso cref="IBusinessObjectCollection{TBusinessObject}"/> based on the predicate.s
+        /// Gets the list of items that satisfies the query being passed in.
         /// </summary>
-        /// <param name="query">The query.</param>
+        /// <param name="items">The list of business object items.</param>
         /// <returns></returns>
-        public virtual IBusinessObjectCollection<TBusinessObject> SatisfyingObjectsFrom(IBusinessObjectCollection<TBusinessObject> query)
+        public virtual IBusinessObjectCollection<TBusinessObject> ItemsMatched(IBusinessObjectCollection<TBusinessObject> items)
         {
-            return query.Where(Predicate).AsEnumerable() as IBusinessObjectCollection<TBusinessObject>;
+            return items.Where(Predicate).AsEnumerable() as IBusinessObjectCollection<TBusinessObject>;
         }
 
         /// <summary>

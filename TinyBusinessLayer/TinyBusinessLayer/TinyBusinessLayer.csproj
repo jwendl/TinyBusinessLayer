@@ -46,12 +46,15 @@
     <Compile Include="BaseBusinessObjectCollection.cs" />
     <Compile Include="BaseEditableBusinessCollection.cs" />
     <Compile Include="BaseReadOnlyBusinessCollection.cs" />
+    <Compile Include="Extensions\ExpressionExtensions.cs" />
+    <Compile Include="Framework\Args.cs" />
+    <Compile Include="Framework\ParameterRebinder.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Interfaces\IBusinessObjectCollection.cs" />
     <Compile Include="Modifications\Interfaces\IBusinessModification.cs" />
     <Compile Include="Interfaces\IBusinessObject.cs" />
-    <Compile Include="Specification\BaseSpecification.cs" />
-    <Compile Include="Specification\Interfaces\ISpecification.cs" />
+    <Compile Include="Specifications\BaseSpecification.cs" />
+    <Compile Include="Specifications\Interfaces\ISpecification.cs" />
     <Compile Include="Validations\Interfaces\IBusinessValidation.cs" />
     <Compile Include="Interfaces\IEditableBusinessCollection.cs" />
     <Compile Include="Interfaces\IReadOnlyBusinessCollection.cs" />
@@ -64,7 +67,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Extensions\" />
+    <CodeAnalysisDictionary Include="..\Solution Items\CodeDictionary.xml">
+      <Link>CodeDictionary.xml</Link>
+    </CodeAnalysisDictionary>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

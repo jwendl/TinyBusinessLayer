@@ -5,6 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0E20AD3C-DE0C-4356-8B28-2756BA6863C3}"
 	ProjectSection(SolutionItems) = preProject
+		Solution Items\CodeDictionary.xml = Solution Items\CodeDictionary.xml
 		Solution Items\TinyBusinessLayer.ruleset = Solution Items\TinyBusinessLayer.ruleset
 	EndProjectSection
 EndProject

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dictionary>
+  <Words>
+    <Unrecognized>
+      <Word>knokker</Word>
+    </Unrecognized>
+    <Recognized>
+      <Word>Mvc</Word>
+      <Word>Magenic</Word>
+      <Word>Api</Word>
+      <Word>Asgard</Word>
+      <Word>Metadatas</Word>
+      <Word>Iso</Word>
+      <Word>Cors</Word>
+      <Word>Wendlandt's</Word>
+      <Word>Auth</Word>
+      <Word>Csla</Word>
+      <Word>Rebinder</Word>
+    </Recognized>
+    <Deprecated>
+      <Term PreferredAlternate=""></Term>
+    </Deprecated>
+    <Compound>
+      <Term CompoundAlternate=""></Term>
+    </Compound>
+    <DiscreteExceptions>
+      <Term></Term>
+    </DiscreteExceptions>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <Acronym>Io</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>
