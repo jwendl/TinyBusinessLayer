@@ -9,7 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Bootstrap\" />
     <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.1.0" />
   </ItemGroup>
 
 </Project>
